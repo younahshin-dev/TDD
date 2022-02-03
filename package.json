@@ -1,0 +1,23 @@
+{
+  "name": "UNIT-BASIC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younahshin-dev/TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/younahshin-dev/TDD/issues"
+  },
+  "homepage": "https://github.com/younahshin-dev/TDD#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
