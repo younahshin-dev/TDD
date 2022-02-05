@@ -27,11 +27,25 @@ describe('Calculator', () => {
     expect(cal.value).toBe(2);
   });
 
-  it('adds should throw an error if sum is grater than 100', () => {
+  it('adds should throw an error message if sum is grater than 100', () => {
     // cal.add(101); -> throw error 가 정상 동작임
     expect(()=>{
       cal.add(101)
     }).toThrow('Value can not be greater than 100'); //-> jest docs exception part
+  });
+
+  it('adds should throw an Error if sum is grater than 100', () => {
+    // cal.add(101); -> throw error 가 정상 동작임
+    expect(()=>{
+      cal.add(101)
+    }).toThrow(Error); //-> jest docs exception part
+  });
+
+  it('adds should throw  if sum is grater than 100', () => {
+    // cal.add(101); -> throw error 가 정상 동작임
+    expect(()=>{
+      cal.add(101)
+    }).toThrow(/Value/); //-> jest docs exception part
   });
 
   it('subtract', () => {
