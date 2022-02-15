@@ -7,6 +7,11 @@ class Stack {
   reset() {
     this.storeList = [];
   }
+
+  size() {
+    return this.storeList.length;
+  }
+
   push(param) {
     this.storeList.push(param);
     this.storeList.map( content => console.log(content))
@@ -15,11 +20,16 @@ class Stack {
   }
 
   pop() {
+
+    if (this.storeList.length === 0) {
+      throw new Error('Stack is empty');
+    }
+
     const popValue = this.storeList.pop();
 
-    if(!popValue) {
-      return 'noData';
-    }
+    // if(!popValue) {
+    //   return 'noData';
+    // }
 
     console.log(`---------pop--------`);
     
@@ -27,6 +37,15 @@ class Stack {
 
     return popValue;
   }  
+
+  peek() {
+
+    if (this.storeList.length === 0) {
+      throw new Error('Stack is empty');
+    }
+
+    return this.storeList[this.storeList.length-1];
+  }
 }
   
 module.exports = Stack;
