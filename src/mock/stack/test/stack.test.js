@@ -1,4 +1,5 @@
-const Stack = require('../stack.js');
+//const Stack = require('../stack.js');
+const Stack = require('../stack_object.js');
 
 describe('stack test', () => {
   
